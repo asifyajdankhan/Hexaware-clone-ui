@@ -67,9 +67,8 @@ main {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   transition: transform 0.5s ease-out;
-  /* background-color: #000; */
+  background-color: gray !important;
 }
-
 /* for sticky  navbar */
 
 .header_link_top {
@@ -77,10 +76,7 @@ main {
   transition: all 0.5s linear;
   height: 95px;
   margin: 0 !important;
-}
-.header_link_top:hover {
-  background-color: white;
-  transition: all 0.5s linear;
+  padding: 0;
 }
 .header_link_tab ul li {
   padding: 0px 10px 0px 10px;
@@ -88,9 +84,7 @@ main {
 .header_link_tab ul li a {
   color: #ffffff;
 }
-.nav.black ul li a {
-  color: #000;
-}
+
 .header_link_tab ul li a:hover {
   color: #0056b3 !important;
   text-decoration: underline;
@@ -99,6 +93,10 @@ main {
   text-decoration-thickness: 2px;
   transition: ease 0.5s;
 }
+.header_link_tab ul li a:active {
+  color: #000000 !important;
+}
+
 .header_navbar_social_icon {
   font-size: 22px;
 }
@@ -386,24 +384,6 @@ a:focus {
   border-radius: 5px;
 }
 
-/* .new-hover-img {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  -webkit-transition: all ease 0.8s;
-  -moz-transition: all ease 0.8s;
-  transition: all ease 2s;
-}
-.google-circle {
-  width: 23px;
-  height: 23px;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  -webkit-transition: all ease 0.8s;
-  -moz-transition: all ease 0.8s;
-  transition: all ease 2s;
-} */
-
 .covid-card {
   width: 100%;
   height: 150px;
@@ -582,7 +562,6 @@ a:focus {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
-  /* background: linear-gradient(to right top, transparent 0, orange 100%); */
   border: 0;
 }
 .card-slider-professional img {
@@ -590,7 +569,6 @@ a:focus {
 }
 .card-slider-professional-image:hover {
   transform: scale(1.1);
-  /* opacity: 0.6; */
 }
 .professional-badge-card {
   position: absolute;
@@ -648,13 +626,6 @@ a:focus {
   height: 100%;
   transform: translate(50%);
   z-index: -999;
-  /* background: linear-gradient(0deg, white 20%, #f4f4f4 60%, white 20%); */
-  /* height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(90deg, red 25%, #f4f4f4 50%, blue 25%);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  margin: 0px; */
 }
 .grey-patch-color-outer {
   position: absolute;
@@ -761,19 +732,7 @@ a:focus {
   left: 0%;
   top: 54%;
 }
-.sevenslider-swiper-arrow-pagination {
-  /* position: absolute; */
-  /* border: 1px solid #000;
-  width: 10rem;
-  height: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  top: 0%;
-  left: 83%;
-  z-index: 999;
-  border-radius: 5px; */
-}
+
 .compelling-image-one {
   width: 100%;
   height: 700px;
@@ -832,6 +791,9 @@ a:focus {
   color: #fff;
   /* box-shadow: none; */
 }
+select > option {
+  background-color: gray;
+}
 .radio-checkbox-font {
   font-size: 22px;
   font-weight: 500;
@@ -840,12 +802,7 @@ a:focus {
   width: 20px;
   height: 20px;
 }
-/* .captcha-image {
-  background-color: white;
-  width: 115px;
-  height: 45px;
-  border-radius: 7px;
-} */
+
 .captha-code-color {
   color: rgb(0, 0, 0);
   font-size: 25px;
